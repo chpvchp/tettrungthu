@@ -1,0 +1,116 @@
+/* Nền sao */
+#starfield {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: -1;
+}
+
+/* Body & Header */
+body {
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+    color: #fff;
+    font-size: 24px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(22,36,71,0.8);
+    position: relative;
+}
+
+header nav a {
+    color: #fca311;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.header-moon {
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    width: 128px;
+}
+
+/* Hero section */
+#hero {
+    position: relative;
+    height: 400px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#hero img.lantern {
+    width: 200px;
+    position: absolute;
+    bottom: 50px;
+    animation: float 3s infinite alternate;
+    border-radius: 16px;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 300px;
+    height: 240px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.4s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Form */
+form input, form textarea {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    background-color: #fca311;
+    border: none;
+    padding: 10px 20px;
+    color: #162447;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(22,36,71,0.8);
+}
+
+/* Lantern positions */
+.lantern:nth-child(1) { left: 20%; animation-duration: 3s; }
+.lantern:nth-child(2) { left: 40%; animation-duration: 4s; }
+.lantern:nth-child(3) { left: 60%; animation-duration: 5s; }
+.lantern:nth-child(4) { left: 80%; animation-duration: 3.5s; }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chúc Mừng Tết Trung Thu</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Potton+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div id="starfield"></div> <!-- Nền sao -->
+
+<header>
+    <h1>Chúc Mừng Tết Trung Thu</h1>
+    <img src="moon.png" alt="Mặt trăng" class="header-moon">
+    <nav>
+        <a href="#gioi-thieu">Giới thiệu</a>
+        <a href="#thu-vien">Thư viện</a>
+        <a href="#chu-tet">Gửi lời chúc</a>
+    </nav>
+</header>
+
+<section id="hero">
+    <img src="lantern.png" alt="Lồng đèn" class="lantern">
+    <img src="lantern.png" alt="Lồng đèn" class="lantern">
+    <img src="lantern.png" alt="Lồng đèn" class="lantern">
+    <img src="lantern.png" alt="Lồng đèn" class="lantern">
+</section>
+
+<section id="gioi-thieu">
+    <h2>Giới thiệu Tết Trung Thu</h2>
+    <p>Tết Trung Thu là một trong những ngày lễ truyền thống quan trọng ở Việt Nam, diễn ra vào rằm tháng 8 âm lịch. Trẻ em thường rước đèn, thưởng thức bánh trung thu và tham gia múa lân. Đây cũng là dịp để gia đình sum họp, vui chơi và gắn kết.</p>
+</section>
+
+<section id="thu-vien">
+    <h2>Thư viện ảnh</h2>
+    <div class="gallery">
+        <img src="https://tinhocnews.com/wp-content/uploads/2024/08/background-trung-thu-1024x1024.jpg" alt="Lồng đèn 1">
+        <img src="https://hunufa.vn/wp-content/uploads/2025/09/cach-trang-tri-background-trung-thu-dep-3-scaled.webp" alt="Bánh trung thu">
+        <img src="https://inbatkholonhn.com/wp-content/uploads/2021/09/background-trung-thu-4.jpg" alt="Trẻ em rước đèn">
+        <img src="https://cdnv2.tgdd.vn/bhx-static/bhx/News/Images/2025/09/23/1583314/image11_202509231454090908.jpg" alt="Múa lân">
+    </div>
+</section>
+
+<section id="chu-tet">
+    <h2>Gửi lời chúc</h2>
+    <form id="wishForm">
+        <input type="text" id="name" placeholder="Tên của bạn" required>
+        <textarea id="message" placeholder="Nhập lời chúc..." required></textarea>
+        <button type="submit">Gửi</button>
+    </form>
+    <div id="thankyou" style="margin-top:20px;"></div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Tết Trung Thu</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
